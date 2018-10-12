@@ -6,11 +6,11 @@
 //  Copyright © 2018 developer. All rights reserved.
 //
 
-#import "HJG_YinSi.h"
+#import "HJGprivacy.h"
 #import <UIKit/UIKit.h>
 
 #define isFirstYinSi  @"isFirstYinSi"
-@interface HJG_YinSi()
+@interface HJGprivacy()
 
 @property(nonatomic,strong)UIWindow * window;
 
@@ -21,15 +21,16 @@
 @property (nonatomic, strong) UIButton *closeBut;
 
 @end
-@implementation HJG_YinSi
+@implementation HJGprivacy
 
 - (UIWebView *)webV
 {
     if (!_webV) {
         UIWebView * theView = [[UIWebView alloc] initWithFrame:CGRectMake(10, 70, [UIScreen mainScreen].bounds.size.width - 20, [UIScreen mainScreen].bounds.size.height - 200)];
-        NSURL *associateBundleURL = [[NSBundle mainBundle] URLForResource:@"wangye" withExtension:@"bundle"];
-        NSBundle *bundle = [NSBundle bundleWithURL:associateBundleURL];
-        NSString *path = [bundle pathForResource:@"hjg_yinsi" ofType:@"html"];
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        NSString *resourcePath = [bundle pathForResource:@"HJGprivacy" ofType:@"bundle"] ;
+        NSBundle *bundle2 = [NSBundle bundleWithPath:resourcePath];
+        NSString *path = [bundle2 pathForResource:@"hjg_yinsi" ofType:@"html"];
         NSURL* url = [NSURL  fileURLWithPath:path];
         [theView loadRequest:[NSURLRequest requestWithURL:url]];
         [self.frontView addSubview:theView];
@@ -77,11 +78,11 @@
     [self shareManager];
 }
 
-+(HJG_YinSi *)shareManager{
-    static HJG_YinSi *instance = nil;
++(HJGprivacy *)shareManager{
+    static HJGprivacy *instance = nil;
     static dispatch_once_t oneToken;
     dispatch_once(&oneToken,^{
-        instance = [[HJG_YinSi alloc] init];
+        instance = [[HJGprivacy alloc] init];
     });
     return instance;
 }

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HJG_YinSi : NSObject
+@interface HJGprivacy : NSObject
 
 @end
 
