@@ -49,7 +49,7 @@
 {
     if (!_closeBut) {
         UIButton * theView = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMidX(self.webV.frame)-50, CGRectGetMaxY(self.webV.frame) + 10, 100, 60)];
-        [theView setTitle:@"close" forState:UIControlStateNormal];
+        [theView setTitle:@"同意" forState:UIControlStateNormal];
         theView.layer.cornerRadius= 30;
         theView.layer.borderColor = [UIColor blackColor].CGColor;
         theView.layer.borderWidth= 2;

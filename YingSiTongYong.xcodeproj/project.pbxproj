@@ -84,6 +84,7 @@
 		8B2A1013216B57BA00754B77 = {
 			isa = PBXGroup;
 			children = (
+				8B2A1051216B585400754B77 /* YinSi */,
 				8B2A101E216B57BA00754B77 /* YingSiTongYong */,
 				8B2A1037216B57BB00754B77 /* YingSiTongYongTests */,
 				8B2A1042216B57BB00754B77 /* YingSiTongYongUITests */,
@@ -104,7 +105,6 @@
 		8B2A101E216B57BA00754B77 /* YingSiTongYong */ = {
 			isa = PBXGroup;
 			children = (
-				8B2A1051216B585400754B77 /* YinSi */,
 				8B2A101F216B57BA00754B77 /* AppDelegate.h */,
 				8B2A1020216B57BA00754B77 /* AppDelegate.m */,
 				8B2A1022216B57BA00754B77 /* ViewController.h */,
