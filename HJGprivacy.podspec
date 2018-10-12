@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "HJGprivacy"
-s.version      = "1.0.0"
+s.version      = "1.0.1"
 s.summary      = "自动集成隐私政策"
 s.description  = <<-DESC
 自动集成隐私政策。

@@ -27,7 +27,9 @@
 {
     if (!_webV) {
         UIWebView * theView = [[UIWebView alloc] initWithFrame:CGRectMake(10, 70, [UIScreen mainScreen].bounds.size.width - 20, [UIScreen mainScreen].bounds.size.height - 200)];
-        [theView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://huangjianguohjg.github.io/yinsi/tongyong.html"]]];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"hjg_yinsi" ofType:@"html"];
+        NSURL* url = [NSURL  fileURLWithPath:path];
+        [theView loadRequest:[NSURLRequest requestWithURL:url]];
         [self.frontView addSubview:theView];
         _webV = theView;
     }
