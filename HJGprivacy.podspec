@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "HJGprivacy"
-s.version      = "1.0.2"
+s.version      = "1.0.3"
 s.summary      = "自动集成隐私政策"
 s.description  = <<-DESC
 自动集成隐私政策。
@@ -21,7 +21,7 @@ s.platform     = :ios, "8.0"
 s.source       = { :git => "https://github.com/huangjianguohjg/YingSiTongYong.git", :tag => s.version }
 s.source_files  = "Classes", "YinSi"
 s.resource_bundles = {
-  'HJGprivacy' => ['YinSi/*.html']
+  'HJGprivacy' => ['YinSi/*.*']
 }
 s.requires_arc = true
 

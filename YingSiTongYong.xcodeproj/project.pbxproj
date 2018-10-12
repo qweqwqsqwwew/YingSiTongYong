@@ -16,7 +16,7 @@
 		8B2A1039216B57BB00754B77 /* YingSiTongYongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2A1038216B57BB00754B77 /* YingSiTongYongTests.m */; };
 		8B2A1044216B57BB00754B77 /* YingSiTongYongUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2A1043216B57BB00754B77 /* YingSiTongYongUITests.m */; };
 		8B2A1054216B589100754B77 /* HJG_YinSi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2A1053216B589100754B77 /* HJG_YinSi.m */; };
-		D70B219821709C4700C5B154 /* hjg_yinsi.html in Resources */ = {isa = PBXBuildFile; fileRef = D70B219721709C4700C5B154 /* hjg_yinsi.html */; };
+		D70B219D2170A4D500C5B154 /* wangye.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D70B219C2170A4D500C5B154 /* wangye.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		8B2A1045216B57BB00754B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B2A1052216B589100754B77 /* HJG_YinSi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJG_YinSi.h; sourceTree = "<group>"; };
 		8B2A1053216B589100754B77 /* HJG_YinSi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJG_YinSi.m; sourceTree = "<group>"; };
-		D70B219721709C4700C5B154 /* hjg_yinsi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hjg_yinsi.html; sourceTree = "<group>"; };
+		D70B219C2170A4D500C5B154 /* wangye.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = wangye.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +141,9 @@
 		8B2A1051216B585400754B77 /* YinSi */ = {
 			isa = PBXGroup;
 			children = (
-				D70B219721709C4700C5B154 /* hjg_yinsi.html */,
 				8B2A1052216B589100754B77 /* HJG_YinSi.h */,
 				8B2A1053216B589100754B77 /* HJG_YinSi.m */,
+				D70B219C2170A4D500C5B154 /* wangye.bundle */,
 			);
 			path = YinSi;
 			sourceTree = "<group>";
@@ -254,8 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70B219D2170A4D500C5B154 /* wangye.bundle in Resources */,
 				8B2A102C216B57BB00754B77 /* LaunchScreen.storyboard in Resources */,
-				D70B219821709C4700C5B154 /* hjg_yinsi.html in Resources */,
 				8B2A1029216B57BB00754B77 /* Assets.xcassets in Resources */,
 				8B2A1027216B57BA00754B77 /* Main.storyboard in Resources */,
 			);
